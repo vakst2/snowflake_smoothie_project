@@ -41,3 +41,7 @@ if ingredients_list:
 
     #st.write(my_insert_stmt)
     #st.stop()
+
+import requests
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+st.text(fruityvice_response)
